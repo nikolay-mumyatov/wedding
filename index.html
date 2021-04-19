@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Приглашение</title>
-</head>
-<body>
-  <div class="main-wrapper">
-    <div class="invitation">
-      <h1 class="invitation-title">
-        <div class="invitation-wrapper">
-
-          <div class="invitation-description"></div>
-          <!-- /.invitation-description -->
-
-          <div class="invitation-date"></div>
-          <!-- /.invitation-date -->
-          
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Приглашение</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="invitation">
+        <h1 class="invitation__title">Дорогие Друзья</h1>
+        <span class="invitation__description"
+          >Мы рады пригласить вас<br />
+          на нашу свадьбу</span
+        >
+        <div class="invitation-calendar">
+          <h2 class="calendar__title">Июль 2021</h2>
+          <img src="img/calendar.svg" alt="Календарь" class="calendar__img" />
+          <img src="img/ring.svg" alt="Кольцо" class="calendar__ring" />
         </div>
-        <!-- /.invitation-wrapper -->
-      </h1>
-      <!-- /.invitation-title -->
+        <!-- /.invitation-calendar -->
+
+        <div class="invitation__ivent">
+          <h3 class="ivent__title">
+            <span class="ivent__time">17.00</span> - Торжественная регистрация.
+          </h3>
+          <span class="ivent__description"
+            >Дворец бракосочетания № 1<br />
+            адрес: Малый Харитоньевский переулок, 10</span
+          >
+        </div>
+        <!-- /.invitation__ivent -->
+        <div class="invitation__ivent">
+          <h3 class="ivent__title">
+            <span class="ivent__time">19.00</span> - Праздничный ужин.
+          </h3>
+          <span class="ivent__description"
+            >Кафе «Fos»<br />
+            адрес: Ленинский проспект, 30А</span
+          >
+        </div>
+        <!-- /.invitation__ivent -->
+
+        <span class="invitation__note">Dress code: Coctail</span>
+
+        <form action="#" class="invitation__form">
+          <input type="text" class="invitation__input" placeholder="Гость:" />
+          <input type="text" class="invitation__input" placeholder="Гостья:" />
+          <span class="form__note"
+            >* Если вы без пары, то заполните только свое поле.</span
+          >
+        </form>
+        <div class="form-button">
+          <button type="submit" class="invitation__button">Подтвердить</button>
+        </div>
+        <!-- /.invitation__form -->
+      </div>
+      <!-- /.invitation -->
     </div>
-    <!-- /.invitation -->
-  </div>
-  <!-- /.main-wrapper -->
-</body>
+    <!-- /.main-wrapper -->
+  </body>
 </html>
