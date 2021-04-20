@@ -45,15 +45,15 @@
 
         <span class="invitation__note">Dress code: Coctail</span>
 
-        <form action="#" class="invitation__form">
-          <input type="text" class="invitation__input" placeholder="Гость:" />
-          <input type="text" class="invitation__input" placeholder="Гостья:" />
+        <form action="send.php" method="POST" class="invitation__form" id="form-invitation">
+          <input type="text" name="user-man" class="invitation__input" placeholder="Гость:" />
+          <input type="text" name="user-woman" class="invitation__input" placeholder="Гостья:" />
           <span class="form__note"
             >* Если вы без пары, то заполните только свое поле.</span
           >
         </form>
         <div class="form-button">
-          <button type="submit" class="invitation__button">Подтвердить</button>
+          <button type="submit" form="form-invitation" class="invitation__button">Подтвердить</button>
         </div>
         <!-- /.invitation__form -->
       </div>
