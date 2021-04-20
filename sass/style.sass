@@ -7,30 +7,33 @@
   font-family: 'Helvetica Light'
 
 .main
+  background-image: url('../img/pattern.jpg')
+  background-size: 100%
+  width: 100%
+  position: fixed
+  height: 100vh
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: auto
+  overflow-y: scroll
   &-wrapper
-    // background-image: url('../img/wedding-backgraund.png')
-    background-image: url('../img/paper.jpg')
+    background-image: url('../img/acua.jpg')
     background-repeat: no-repeat
-    // background-size: 100%
     object-fit: cover
     background-position: center
     padding: 40px 40px
-    // position: fixed
-    // left: 0
-    // right: 0
-    // // top: 50%
-    // // transform: translateY(-50%)
-    // bottom: 0
-    // margin: 0 auto
+    margin: 50px auto
     max-width: 495px
-    // height: 1300px
     filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.25))
 
 .invitation
   margin: auto
   padding: 40px 42px
-  background-color: #ffffff23
+  background-color: #fffffff6
   border: 1px solid #8a8a8a
+  border-radius: 4px
   &__title
     margin-bottom: 15px
     font-weight: normal
@@ -52,12 +55,12 @@
   &-calendar
     position: relative
     margin-top: 30px
-    margin-bottom: 25px
+    margin-bottom: 30px
   &__ivent
-    margin-top: 25px
+    margin-top: 20px
   &__note
     display: block
-    margin-top: 25px
+    margin-top: 20px
     font-family: 'Helvetica Light'
     font-style: normal
     font-weight: 400
@@ -91,6 +94,11 @@
     border: 1px solid #EAB54E
     border-radius: 4px
     margin: 0 auto
+    font-family: 'Helvetica Light'
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
     outline: none
     cursor: pointer
 
@@ -133,7 +141,7 @@
 .form
   &-button
     display: flex
-    margin-top: 15px
+    margin-top: 30px
   &__note
     display: block
     font-family: 'Helvetica Light'
@@ -142,3 +150,5 @@
     font-size: 10px
     line-height: 10px
     color: #7c7c7c
+
+@import "media"

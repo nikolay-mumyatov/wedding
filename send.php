@@ -1,5 +1,4 @@
 <?php
-
 $man = $_POST['user-man'];
 $woman = $_POST['user-woman'];
 $token = "1700373059:AAFbVaPpJ5rS6YTJCcs1wKRb02EXNCl-IeY";
@@ -21,4 +20,4 @@ if ($sendToTelegram) {
 }
 ?>
 
-https://api.telegram.org/bot1700373059:AAFbVaPpJ5rS6YTJCcs1wKRb02EXNCl-IeY/getUpdates
+<!-- https://api.telegram.org/bot1700373059:AAFbVaPpJ5rS6YTJCcs1wKRb02EXNCl-IeY/getUpdates -->

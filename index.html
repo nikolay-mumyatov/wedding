@@ -8,57 +8,86 @@
     <title>Приглашение</title>
   </head>
   <body>
-    <div class="main-wrapper">
-      <div class="invitation">
-        <h1 class="invitation__title">Дорогие Друзья</h1>
-        <span class="invitation__description"
-          >Мы рады пригласить вас<br />
-          на нашу свадьбу</span
-        >
-        <div class="invitation-calendar">
-          <h2 class="calendar__title">Июль 2021</h2>
-          <img src="img/calendar.svg" alt="Календарь" class="calendar__img" />
-          <img src="img/ring.svg" alt="Кольцо" class="calendar__ring" />
-        </div>
-        <!-- /.invitation-calendar -->
-
-        <div class="invitation__ivent">
-          <h3 class="ivent__title">
-            <span class="ivent__time">17.00</span> - Торжественная регистрация.
-          </h3>
-          <span class="ivent__description"
-            >Дворец бракосочетания № 1<br />
-            адрес: Малый Харитоньевский переулок, 10</span
+    <main class="main">
+      <div class="main-wrapper">
+        <div class="invitation">
+          <h1 class="invitation__title">Дорогие Друзья</h1>
+          <span class="invitation__description"
+            >Мы рады пригласить вас<br />
+            на нашу свадьбу</span
           >
-        </div>
-        <!-- /.invitation__ivent -->
-        <div class="invitation__ivent">
-          <h3 class="ivent__title">
-            <span class="ivent__time">19.00</span> - Праздничный ужин.
-          </h3>
-          <span class="ivent__description"
-            >Кафе «Fos»<br />
-            адрес: Ленинский проспект, 30А</span
-          >
-        </div>
-        <!-- /.invitation__ivent -->
+          <div class="invitation-wrapper">
+            <div class="invitation-calendar">
+              <h2 class="calendar__title">Июль 2021</h2>
+              <img
+                src="img/calendar.svg"
+                alt="Календарь"
+                class="calendar__img"
+              />
+              <img src="img/ring.svg" alt="Кольцо" class="calendar__ring" />
+            </div>
+            <!-- /.invitation-calendar -->
 
-        <span class="invitation__note">Dress code: Coctail</span>
+            <div class="invitation__ivent">
+              <h3 class="ivent__title">
+                <span class="ivent__time">17.00</span> - Торжественная
+                регистрация.
+              </h3>
+              <span class="ivent__description"
+                >Дворец бракосочетания № 1<br />
+                адрес: Малый Харитоньевский переулок, 10</span
+              >
+            </div>
+            <!-- /.invitation__ivent -->
+            <div class="invitation__ivent">
+              <h3 class="ivent__title">
+                <span class="ivent__time">19.00</span> - Праздничный ужин.
+              </h3>
+              <span class="ivent__description"
+                >Кафе «Fos»<br />
+                адрес: Ленинский проспект, 30А</span
+              >
+            </div>
+            <!-- /.invitation__ivent -->
 
-        <form action="send.php" method="POST" class="invitation__form" id="form-invitation">
-          <input type="text" name="user-man" class="invitation__input" placeholder="Гость:" />
-          <input type="text" name="user-woman" class="invitation__input" placeholder="Гостья:" />
-          <span class="form__note"
-            >* Если вы без пары, то заполните только свое поле.</span
+            <span class="invitation__note">Dress code: Coctail</span>
+          </div>
+          <form
+            action="send.php"
+            method="POST"
+            class="invitation__form"
+            id="form-invitation"
           >
-        </form>
-        <div class="form-button">
-          <button type="submit" form="form-invitation" class="invitation__button">Подтвердить</button>
+            <input
+              type="text"
+              name="user-man"
+              class="invitation__input"
+              placeholder="Гость:"
+            />
+            <input
+              type="text"
+              name="user-woman"
+              class="invitation__input"
+              placeholder="Гостья:"
+            />
+            <span class="form__note"
+              >* Если вы без пары, то заполните только свое поле.</span
+            >
+          </form>
+          <div class="form-button">
+            <button
+              type="submit"
+              form="form-invitation"
+              class="invitation__button"
+            >
+              Подтвердить
+            </button>
+          </div>
+          <!-- /.invitation__form -->
         </div>
-        <!-- /.invitation__form -->
+        <!-- /.invitation -->
       </div>
-      <!-- /.invitation -->
-    </div>
-    <!-- /.main-wrapper -->
+      <!-- /.main-wrapper -->
+    </main>
   </body>
 </html>
